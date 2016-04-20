@@ -54,13 +54,13 @@ function seeResults() {
 		//if the answer matches the userGuess and goes with the corresponding question, mark as correct and change the color to green
 		if(answer == userGuess) {
 			//add the class of wwrong that changes the questions that were right to green
-			questionColor.className += 'correct'
+			questionColor.className = 'correct'
 			//move cown the list to add any other correct userGuess(s)
 			correct++
 		//otherwise if the answer doesnt match the userGuess, mark as wrong and change the question to red
 		} else {
 			//add the class of wwrong that changes the questions that were wrong to red
-			questionColor.className += 'wrong'
+			questionColor.className = 'wrong'
 			//move down the list and count how many wrong answers there were
 			wrong++
 		}
